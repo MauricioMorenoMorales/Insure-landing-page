@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.header {
+  position: fixed;
+  background-color: #fafafa;
+  width: 100vw;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__menu--desktop {
+  display: none;
+}
+.header__menu--mobile {
+  display: none;
+}
+.header__menu--mobile.active {
+  display: block;
+}
+
+@media screen and (min-width: 500px) {
+  .header__menu--desktop {
+    display: block;
+  }
+}
