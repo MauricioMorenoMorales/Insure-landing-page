@@ -17,7 +17,7 @@ body {
   top: 0;
   background-color: #fafafa;
   width: 100vw;
-  height: 150px;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,10 +25,17 @@ body {
 .header__menu--desktop {
   display: none;
 }
-.header__menu--mobile {
+
+.plegable-menu {
   display: none;
 }
-.header__menu--mobile.active {
+.plegable-menu.active {
+  position: absolute;
+  background-color: red;
+  top: 120;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: block;
 }
 

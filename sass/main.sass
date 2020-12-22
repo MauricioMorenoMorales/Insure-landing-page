@@ -15,17 +15,24 @@ body
 	top: 0
 	background-color: $very-light-gray
 	width: 100vw
-	height: 150px
+	height: 120px
 	display: flex
 	align-items: center
 	justify-content: space-between
 	&__menu
 		&--desktop
 			display: none
-		&--mobile
-			display: none
-			&.active
-				display: block
+
+.plegable-menu
+	display: none
+	&.active
+		position: absolute
+		background-color: red
+		top: 120
+		bottom: 0
+		left: 0
+		right: 0
+		display: block
 
 
 @media screen and ( min-width: 500px)
