@@ -16,8 +16,9 @@ body {
   position: fixed;
   top: 0;
   background-color: #fafafa;
+  padding: 0 20px;
   width: 100vw;
-  height: 120px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,14 +26,42 @@ body {
 .header__menu--desktop {
   display: none;
 }
+.header__figure {
+  margin: 0;
+}
 
 .plegable-menu {
   display: none;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  color: #fafafa;
+  background-color: #2b272f;
+  background-image: url("../images/bg-pattern-mobile-nav.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 40%;
+}
+.plegable-menu ul {
+  padding: 0;
+}
+.plegable-menu ul li {
+  margin: 0;
+  margin-top: 50px;
+  list-style: none;
+  font-size: 2rem;
+  text-align: center;
+}
+.plegable-menu ul li a {
+  text-decoration: none;
+  color: #fafafa;
+  padding: 10px 40px;
+}
+.plegable-menu ul li a:focus {
+  outline: 2px solid #fafafa;
 }
 .plegable-menu.active {
-  position: absolute;
-  background-color: red;
-  top: 120;
+  position: fixed;
+  top: 80px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -42,5 +71,9 @@ body {
 @media screen and (min-width: 500px) {
   .header__menu--desktop {
     display: block;
+  }
+
+  .plegable-menu.active {
+    display: none;
   }
 }
