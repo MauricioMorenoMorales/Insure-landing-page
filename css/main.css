@@ -68,12 +68,43 @@ body {
   display: block;
 }
 
-@media screen and (min-width: 500px) {
+main {
+  margin-top: 100px;
+}
+
+@media screen and (min-width: 700px) {
   .header__menu--desktop {
     display: block;
   }
+  .header__menu--desktop ul {
+    display: flex;
+    margin-right: 10px;
+  }
+  .header__menu--desktop ul li {
+    list-style: none;
+    font-weight: 400;
+    font-family: "Karla", sans-serif;
+  }
+  .header__menu--desktop ul li a {
+    display: flex;
+    text-decoration: none;
+    color: #95a9c6;
+    width: 120px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #nav-button {
+    color: #2b272f;
+    border: 2px solid;
+  }
 
   .plegable-menu.active {
+    display: none;
+  }
+
+  .hamburger {
     display: none;
   }
 }

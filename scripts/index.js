@@ -7,4 +7,8 @@ document.addEventListener('click', e => {
 		$plegableMenu.classList.toggle('active')
 		$button.classList.toggle('is-active')
 	}
+	if (e.target.matches('.nav-link')) {
+		$plegableMenu.classList.remove('active')
+		$button.classList.remove('is-active')
+	}
 })
