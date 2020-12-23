@@ -18,6 +18,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+button {
+  cursor: pointer;
+}
+
 .header {
   position: fixed;
   z-index: 10000;
@@ -35,6 +39,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header__figure {
   margin: 0;
+}
+
+.desktop-background {
+  display: none;
 }
 
 .plegable-menu {
@@ -80,6 +88,50 @@ main {
   margin-top: 80px;
 }
 
+.hero-container__background-image--right--mobile {
+  position: absolute;
+  right: 0;
+  top: 120vh;
+  z-index: 10;
+}
+.hero-container__background-image--right--mobile.active {
+  width: 0;
+  height: 0;
+}
+
+.hero__figure {
+  margin: 0;
+}
+.hero__figure__image {
+  width: 100%;
+  height: 100%;
+}
+.hero__article {
+  background-color: #2d2640;
+  margin-top: 0;
+  background-image: url("../images/bg-pattern-intro-left-mobile.svg");
+  background-repeat: no-repeat;
+}
+.hero__article__text-container {
+  color: #fafafa;
+  text-align: center;
+  padding: 0 5%;
+}
+.hero__article__text-container__h1 {
+  margin-top: -5px;
+  margin-bottom: 0;
+  padding-top: 60px;
+  font-size: 3rem;
+}
+.hero__article__text-container__button {
+  background-color: #2d2640;
+  border: 2px solid #fafafa;
+  width: 150px;
+  height: 40px;
+  color: #fafafa;
+  margin-bottom: 100px;
+}
+
 @media screen and (min-width: 650px) {
   .header__menu--desktop {
     display: block;
@@ -117,17 +169,23 @@ main {
     display: none;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 810px) {
+  .mobile-background {
+    display: none;
+  }
+
   .hero-container {
     height: 700px;
   }
   .hero-container__background-image--left {
+    display: block;
     position: absolute;
     z-index: 10;
-    top: 50%;
+    top: 400px;
     height: 300px;
   }
   .hero-container__background-image--right {
+    display: block;
     position: absolute;
     z-index: 10;
     height: 500px;
@@ -149,29 +207,33 @@ main {
     margin-left: 50%;
     margin-right: 0;
   }
+  .hero__figure__image {
+    height: 40%;
+    width: 80%;
+  }
   .hero__article {
     color: #fafafa;
+    background-image: none;
   }
   .hero__article__line {
     padding-top: 60px;
     width: 20%;
     border-bottom: 1px solid #fafafa;
+    margin-left: 5%;
   }
   .hero__article__text-container {
     width: 50%;
+    text-align: start;
   }
   .hero__article__text-container__h1 {
-    font-size: 3rem;
     margin-bottom: 0;
   }
   .hero__article__text-container__p {
     font-size: 1rem;
   }
   .hero__article__text-container__button {
-    width: 150px;
-    height: 40px;
-    border: none;
-    background-color: #fafafa;
+    position: relative;
+    z-index: 15;
     margin-bottom: 60px;
   }
 }

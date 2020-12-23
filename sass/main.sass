@@ -15,6 +15,9 @@ h1,h2,h3,h4,h5,h6
 	font-family: $font-family-heading
 	font-weight: $font-weight-heading
 
+button
+	cursor: pointer
+
 
 .header
 	position: fixed
@@ -33,6 +36,8 @@ h1,h2,h3,h4,h5,h6
 	&__figure
 		margin: 0
 
+.desktop-background
+	display: none
 
 .plegable-menu
 	display: none
@@ -70,6 +75,44 @@ h1,h2,h3,h4,h5,h6
 main
 	margin-top: 80px
 
+.hero-container
+	&__background-image--right--mobile
+		position: absolute
+		right: 0
+		top: 120vh
+		z-index: 10
+		&.active
+			width: 0
+			height: 0
+
+.hero
+	&__figure
+		margin: 0
+		&__image
+			width: 100%
+			height: 100%
+	&__article
+		background-color: $dark-violet
+		margin-top: 0
+		background-image: url('../images/bg-pattern-intro-left-mobile.svg')
+		background-repeat: no-repeat
+		&__text-container
+			color: $very-light-gray
+			text-align: center
+			padding: 0 5%
+			&__h1
+				margin-top: -5px
+				margin-bottom: 0
+				padding-top: $spacing-medium
+				font-size: 3rem
+			&__button
+				background-color: $dark-violet
+				border: 2px solid $very-light-gray
+				width: 150px
+				height: 40px
+				color: $very-light-gray
+				margin-bottom: $spacing-large
+
 
 @media screen and ( min-width: 650px)
 	.header
@@ -101,16 +144,20 @@ main
 		display: none
 
 
-@media screen and ( min-width: 1000px)
+@media screen and ( min-width: 810px)
+	.mobile-background
+		display: none
 	.hero-container
 		height: 700px
 		&__background-image
 			&--left
+				display: block
 				position: absolute
 				z-index: 10
-				top: 50%
+				top: 400px
 				height: 300px
 			&--right
+				display: block
 				position: absolute
 				z-index: 10
 				height: 500px
@@ -128,22 +175,25 @@ main
 			position: absolute
 			margin-left: 50%
 			margin-right: 0
+			&__image
+				height: 40%
+				width: 80%
 		&__article
 			color: $very-light-gray
+			background-image: none
 			&__line
 				padding-top: $spacing-medium
 				width: 20%
 				border-bottom: 1px solid $very-light-gray
+				margin-left: 5%
 			&__text-container
 				width: 50%
+				text-align: start
 				&__h1
-					font-size: 3rem
 					margin-bottom: 0
 				&__p
 					font-size: 1rem
 				&__button
-					width: 150px
-					height: 40px
-					border: none
-					background-color: $very-light-gray
+					position: relative
+					z-index: 15
 					margin-bottom: $spacing-medium
