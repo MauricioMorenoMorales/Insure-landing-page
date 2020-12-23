@@ -9,6 +9,11 @@ html
 body
 	margin: 0
 	overflow-x: hidden
+	font-family: $font-family-body
+
+h1,h2,h3,h4,h5,h6
+	font-family: $font-family-heading
+	font-weight: $font-weight-heading
 
 
 .header
@@ -53,6 +58,7 @@ body
 				&:focus
 					outline: 2px solid $very-light-gray
 	&.active
+		min-height: 300px
 		position: fixed
 		top: 80px
 		bottom: 0
@@ -64,7 +70,7 @@ main
 	margin-top: 100px
 
 
-@media screen and ( min-width: 700px)
+@media screen and ( min-width: 650px)
 	.header
 		&__menu
 			&--desktop
@@ -91,3 +97,34 @@ main
 		display: none
 	.hamburger
 		display: none
+
+
+@media screen and ( min-width: 1000px)
+	.hero
+		display: flex
+		flex-direction: column
+		align-items: center
+		position: relative
+		padding: 0 5%
+		background-color: $dark-violet
+		&__figure
+			margin-top: $spacing-medium
+			position: absolute
+			margin-left: 50%
+			margin-right: 0
+		&__article
+			color: $very-light-gray
+			&__text-container
+				padding-top: $spacing-medium
+				width: 45%
+				&__h1
+					font-size: 3rem
+					margin-bottom: 0
+				&__p
+					font-size: 1rem
+				&__button
+					width: 150px
+					height: 40px
+					border: none
+					background-color: $very-light-gray
+					margin-bottom: $spacing-medium
