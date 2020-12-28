@@ -2,26 +2,26 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
 * {
   box-sizing: inherit;
 }
-
 body {
   margin: 0;
   overflow-x: hidden;
-  font-family: "Karla", sans-serif;
+  font-family: 'Karla', sans-serif;
 }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "DM Serif Display", serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'DM Serif Display', serif;
   font-weight: 400;
 }
-
 button {
   cursor: pointer;
 }
-
 .header {
   position: fixed;
   z-index: 10000;
@@ -40,17 +40,15 @@ button {
 .header__figure {
   margin: 0;
 }
-
 .desktop-background {
   display: none;
 }
-
 .plegable-menu {
   display: none;
-  font-family: "Karla", sans-serif;
+  font-family: 'Karla', sans-serif;
   font-weight: 400;
   color: #fafafa;
-  background-color: #2b272f;
+  background-color: $very-dark-violet;
   background-image: url("../images/bg-pattern-mobile-nav.svg");
   background-repeat: no-repeat;
   background-position: bottom;
@@ -68,11 +66,11 @@ button {
 }
 .plegable-menu ul li a {
   text-decoration: none;
-  color: #fafafa;
+  color: $very-light-gray;
   padding: 10px 40px;
 }
 .plegable-menu ul li a:focus {
-  outline: 2px solid #fafafa;
+  outline: 2px solid $very-light-gray;
 }
 .plegable-menu.active {
   min-height: 300px;
@@ -83,22 +81,19 @@ button {
   right: 0;
   display: block;
 }
-
 main {
   margin-top: 80px;
 }
-
 .hero-container__background-image--right--mobile {
   position: absolute;
   right: 0;
-  top: 120vh;
+  bottom: -10%;
   z-index: 10;
 }
 .hero-container__background-image--right--mobile.active {
   width: 0;
   height: 0;
 }
-
 .hero__figure {
   margin: 0;
 }
@@ -131,7 +126,6 @@ main {
   color: #fafafa;
   margin-bottom: 100px;
 }
-
 @media screen and (min-width: 650px) {
   .header__menu--desktop {
     display: block;
@@ -143,7 +137,7 @@ main {
   .header__menu--desktop ul li {
     list-style: none;
     font-weight: 400;
-    font-family: "Karla", sans-serif;
+    font-family: 'Karla', sans-serif;
   }
   .header__menu--desktop ul li a {
     display: flex;
@@ -154,17 +148,14 @@ main {
     justify-content: center;
     align-items: center;
   }
-
   #nav-button {
-    color: #2b272f;
+    color: $very-dark-violet;
     border: 2px solid;
     text-align: center;
   }
-
   .plegable-menu.active {
     display: none;
   }
-
   .hamburger {
     display: none;
   }
@@ -173,7 +164,6 @@ main {
   .mobile-background {
     display: none;
   }
-
   .hero-container {
     height: 700px;
   }
@@ -192,7 +182,6 @@ main {
     right: 0;
     top: -40px;
   }
-
   .hero {
     display: flex;
     flex-direction: column;
@@ -234,34 +223,6 @@ main {
   .hero__article__text-container__button {
     position: relative;
     z-index: 15;
-    margin-bottom: 60px;
+    margin-bottom: 25px;
   }
-}
-.description {
-  text-align: center;
-}
-.description__line {
-  padding-top: 60px;
-  margin: 0 auto;
-  border-bottom: 1px solid #2d2640;
-  height: 1px;
-  width: 50%;
-}
-.description__title {
-  color: #2b272f;
-  font-size: 2.5rem;
-}
-.description__card {
-  max-width: 350px;
-  margin: 0 auto;
-  margin-top: 60px;
-}
-.description__card__text h4 {
-  font-size: 1.7rem;
-  color: #2d2640;
-}
-.description__card__text p {
-  line-height: 1.7rem;
-  font-weight: 400;
-  color: #837d87;
 }
