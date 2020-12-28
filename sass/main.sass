@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,h6
 button
 	cursor: pointer
 
-
+//! ################################
 .header
 	position: fixed
 	z-index: 10000
@@ -49,6 +49,7 @@ button
 	background-repeat: no-repeat
 	background-position: bottom
 	background-size: 100% 40%
+	overflow-y: scroll
 	ul
 		padding: 0
 		li
@@ -75,6 +76,7 @@ button
 main
 	margin-top: 80px
 
+//! ################################
 .hero-container
 	&__background-image--right--mobile
 		position: absolute
@@ -114,7 +116,7 @@ main
 				color: $very-light-gray
 				margin-bottom: $spacing-large
 
-
+//! ################################
 .description
 	text-align: center
 	&__line
@@ -140,6 +142,30 @@ main
 				color: $dark-grayish-violet
 
 
+//! ################################
+.find-out-more
+	background-color: $dark-violet
+	color: $very-light-gray
+	margin-top: $spacing-large
+	margin-left: 5%
+	margin-right: 5%
+	text-align: center
+	background-image: url('../images/bg-pattern-how-we-work-mobile.svg')
+	background-repeat: no-repeat
+	background-position: right top
+	h4
+		padding-top: $spacing-large
+		font-size: 2.9rem
+		margin-bottom: $spacing-small
+	button
+			background-color: $dark-violet
+			border: 2px solid $very-light-gray
+			width: 150px
+			height: 40px
+			color: $very-light-gray
+			margin-bottom: $spacing-large
+
+//? ################################
 @media screen and ( min-width: 650px)
 	.header
 		&__menu
@@ -169,7 +195,7 @@ main
 	.hamburger
 		display: none
 
-
+//? ################################
 @media screen and ( min-width: 810px)
 	.header
 		padding: 0 11%
@@ -228,6 +254,7 @@ main
 	.description
 		padding: 0 11%
 
+//? ################################
 @media screen and (min-width: 1000px)
 	.description
 		text-align: start

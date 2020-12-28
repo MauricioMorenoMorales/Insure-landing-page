@@ -55,6 +55,7 @@ button {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100% 40%;
+  overflow-y: scroll;
 }
 .plegable-menu ul {
   padding: 0;
@@ -159,6 +160,31 @@ main {
   line-height: 1.7rem;
   font-weight: 400;
   color: #837d87;
+}
+
+.find-out-more {
+  background-color: #2d2640;
+  color: #fafafa;
+  margin-top: 100px;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  background-image: url("../images/bg-pattern-how-we-work-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.find-out-more h4 {
+  padding-top: 100px;
+  font-size: 2.9rem;
+  margin-bottom: 25px;
+}
+.find-out-more button {
+  background-color: #2d2640;
+  border: 2px solid #fafafa;
+  width: 150px;
+  height: 40px;
+  color: #fafafa;
+  margin-bottom: 100px;
 }
 
 @media screen and (min-width: 650px) {
