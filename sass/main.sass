@@ -79,7 +79,8 @@ main
 	&__background-image--right--mobile
 		position: absolute
 		right: 0
-		top: 120vh
+		//bottom: 0
+		margin-top: -140px
 		z-index: 10
 		&.active
 			width: 0
@@ -114,6 +115,31 @@ main
 				margin-bottom: $spacing-large
 
 
+.description
+	text-align: center
+	&__line
+		padding-top: $spacing-medium
+		margin: 0 auto
+		border-bottom: 1px solid $grayish-blue
+		height: 1px
+		width: 50%
+	&__title
+		color: $very-dark-violet
+		font-size: 2.5rem
+	&__card
+		max-width: 350px
+		margin: 0 auto
+		margin-top: $spacing-medium
+		&__text
+			h4
+				font-size: 1.7rem
+				color: $dark-violet
+			p
+				line-height: 1.7rem
+				font-weight: $font-weight-body-normal
+				color: $dark-grayish-violet
+
+
 @media screen and ( min-width: 650px)
 	.header
 		&__menu
@@ -145,6 +171,8 @@ main
 
 
 @media screen and ( min-width: 810px)
+	.header
+		padding: 0 11%
 	.mobile-background
 		display: none
 	.hero-container
@@ -197,27 +225,22 @@ main
 					position: relative
 					z-index: 15
 					margin-bottom: $spacing-medium
+	.description
+		padding: 0 11%
 
-.description
-	text-align: center
-	&__line
-		padding-top: $spacing-medium
-		margin: 0 auto
-		border-bottom: 1px solid $dark-violet
-		height: 1px
-		width: 50%
-	&__title
-		color: $very-dark-violet
-		font-size: 2.5rem
-	&__card
-		max-width: 350px
-		margin: 0 auto
-		margin-top: $spacing-medium
-		&__text
-			h4
-				font-size: 1.7rem
-				color: $dark-violet
-			p
-				line-height: 1.7rem
-				font-weight: $font-weight-body-normal
-				color: $dark-grayish-violet
+@media screen and (min-width: 1000px)
+	.description
+		text-align: start
+		&__line
+			width: 10%
+			margin: 0
+		&--card-container
+			display: flex
+			justify-content: space-between
+		&__card
+			margin: 0
+			&__figure
+				margin: 0
+			&__text
+				h4
+					font-size: 2rem
