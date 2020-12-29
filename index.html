@@ -27,6 +27,27 @@
       color: hsl(228, 45%, 44%);
     }
   </style>
+  <script>
+    function autoScroll() {
+      var div = document.querySelector(".footer__links__section");
+      div.style.display = '';
+      var top = div.offsetTop;
+      if (window.scrollTop != top)
+        window.scrollTo(0, top);
+    }
+    function loadAutoScroll() {
+      autoScroll();
+      window.onload = null;
+      return false;
+    }
+    function scrollAutoScroll() {
+      autoScroll();
+      window.setTimeout(function () { window.onscroll = null; }, 100);
+      return false;
+    }
+    window.onload = loadAutoScroll;
+    window.onscroll = scrollAutoScroll;
+  </script>
 </head>
 
 <body>
@@ -124,43 +145,44 @@
     </section>
   </main>
   <footer>
-    <section class="footer-social">
+    <section class="footer__social">
       <figure>
         <img src="./images/logo.svg" alt="">
       </figure>
-      <div class="footer-social__icons">
+      <div class="footer__social__icons">
         <a href="#"><img src="./images/icon-facebook.svg" alt=""></a>
         <a href="#"><img src="./images/icon-twitter.svg" alt=""></a>
         <a href="#"><img src="./images/icon-pinterest.svg" alt=""></a>
         <a href="#"><img src="./images/icon-instagram.svg" alt=""></a>
       </div>
-      <div class="footer__links">
-        <div class="footer__links__section">
-          <p>Our company</p>
-          <a href="#">How we work</a>
-          <a href="#">Why insure?</a>
-          <a href="#">Check price</a>
-          <a href="#">Reviews</a>
-        </div>
-        <div class="footer__links__section">
-          <p>Help me</p>
-          <a href="#">FAQ</a>
-          <a href="#">Terms of use</a>
-          <a href="#">Privacy policy</a>
-          <a href="#">Cookies</a>
-        </div>
-        <div class="footer__links__section">
-          <p>Contact</p>
-          <a href="#">Sales</a>
-          <a href="#">Support</a>
-          <a href="#">Live chat</a>
-        </div>
-        <div class="footer__links__section">
-          <p>Others</p>
-          <a href="#">Careers</a>
-          <a href="#">Press</a>
-          <a href="#">Licenses</a>
-        </div>
+      <div class="footer__social__line"></div>
+    </section>
+    <section class="footer__links">
+      <div class="footer__links__section">
+        <p>Our company</p>
+        <a href="#">How we work</a>
+        <a href="#">Why insure?</a>
+        <a href="#">Check price</a>
+        <a href="#">Reviews</a>
+      </div>
+      <div class="footer__links__section">
+        <p>Help me</p>
+        <a href="#">FAQ</a>
+        <a href="#">Terms of use</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">Cookies</a>
+      </div>
+      <div class="footer__links__section">
+        <p>Contact</p>
+        <a href="#">Sales</a>
+        <a href="#">Support</a>
+        <a href="#">Live chat</a>
+      </div>
+      <div class="footer__links__section">
+        <p>Others</p>
+        <a href="#">Careers</a>
+        <a href="#">Press</a>
+        <a href="#">Licenses</a>
       </div>
     </section>
   </footer>
@@ -169,7 +191,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-  <p>Probando neovim</p>
   <script src="./scripts/index.js"></script>
 </body>
 

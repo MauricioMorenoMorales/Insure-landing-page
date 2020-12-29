@@ -109,6 +109,8 @@ main
 				padding-top: $spacing-medium
 				font-size: 3.5rem
 				max-width: 400px
+				margin-left: auto
+				margin-right: auto
 			&__button
 				background-color: $dark-violet
 				border: 2px solid $very-light-gray
@@ -159,6 +161,7 @@ main
 		padding-top: $spacing-large
 		font-size: 3.5rem
 		margin-bottom: $spacing-small
+		max-width: 600px
 	button
 			background-color: $dark-violet
 			border: 2px solid $very-light-gray
@@ -166,6 +169,44 @@ main
 			height: 40px
 			color: $very-light-gray
 			margin-bottom: $spacing-large
+
+footer
+	margin-top: $spacing-large
+	background-image: url('../images/bg-pattern-footer-mobile.svg')
+	background-repeat: no-repeat
+	background-position: top
+	background-size: 100% 150px
+
+.footer__social
+	padding-top: $spacing-medium
+	display: flex
+	flex-direction: column
+	align-items: center
+	&__icons
+		a
+			margin: 20px 5px
+	&__line
+		margin-top: $spacing-small
+		width: 80%
+		height: 1px
+		background-color: $grayish-blue
+
+.footer__links
+	display: flex
+	flex-direction: column
+	align-items: center
+	text-align: center
+	&__section
+		display: flex
+		flex-direction: column
+		p
+			color: $grayish-blue
+		a
+			text-decoration: none
+			color: $dark-violet
+			margin-bottom: 5px
+			&:hover
+				text-decoration: underline
 
 //? ################################
 @media screen and ( min-width: 650px)
@@ -197,22 +238,6 @@ main
 	.hamburger
 		display: none
 	
-	.find-out-more
-		background-image: url('../images/bg-pattern-how-we-work-desktop.svg')
-		display: flex
-		text-align: start
-		height: 250px
-		align-items: center
-		justify-content: space-around
-		height
-		h4
-			margin: 0
-			padding: 0
-			width: 70%
-			max-width: 500px
-		button
-			margin: 0
-			padding: 0
 
 //? ################################
 @media screen and ( min-width: 810px)
@@ -264,6 +289,8 @@ main
 				text-align: start
 				&__h1
 					margin-bottom: 0
+					margin-right: 0
+					margin-left: 0
 				&__p
 					font-size: 1rem
 				&__button
@@ -272,6 +299,21 @@ main
 					margin-bottom: $spacing-medium
 	.description
 		padding: 0 11%
+	.find-out-more
+		background-image: url('../images/bg-pattern-how-we-work-desktop.svg')
+		display: flex
+		text-align: start
+		height: 250px
+		align-items: center
+		justify-content: space-around
+		h4
+			margin: 0
+			padding: 0
+			width: 70%
+			max-width: 500px
+		button
+			margin: 0
+			padding: 0
 
 //? ################################
 @media screen and (min-width: 1000px)

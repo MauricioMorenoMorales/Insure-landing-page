@@ -124,6 +124,8 @@ main {
   padding-top: 60px;
   font-size: 3.5rem;
   max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero__article__text-container__button {
   background-color: #2d2640;
@@ -179,6 +181,7 @@ main {
   padding-top: 100px;
   font-size: 3.5rem;
   margin-bottom: 25px;
+  max-width: 600px;
 }
 .find-out-more button {
   background-color: #2d2640;
@@ -187,6 +190,52 @@ main {
   height: 40px;
   color: #fafafa;
   margin-bottom: 100px;
+}
+
+footer {
+  margin-top: 100px;
+  background-image: url("../images/bg-pattern-footer-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 150px;
+}
+
+.footer__social {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__social__icons a {
+  margin: 20px 5px;
+}
+.footer__social__line {
+  margin-top: 25px;
+  width: 80%;
+  height: 1px;
+  background-color: #95a9c6;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.footer__links__section {
+  display: flex;
+  flex-direction: column;
+}
+.footer__links__section p {
+  color: #95a9c6;
+}
+.footer__links__section a {
+  text-decoration: none;
+  color: #2d2640;
+  margin-bottom: 5px;
+}
+.footer__links__section a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 650px) {
@@ -224,25 +273,6 @@ main {
 
   .hamburger {
     display: none;
-  }
-
-  .find-out-more {
-    background-image: url("../images/bg-pattern-how-we-work-desktop.svg");
-    display: flex;
-    text-align: start;
-    height: 250px;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .find-out-more h4 {
-    margin: 0;
-    padding: 0;
-    width: 70%;
-    max-width: 500px;
-  }
-  .find-out-more button {
-    margin: 0;
-    padding: 0;
   }
 }
 @media screen and (min-width: 810px) {
@@ -307,6 +337,8 @@ main {
   }
   .hero__article__text-container__h1 {
     margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
   }
   .hero__article__text-container__p {
     font-size: 1rem;
@@ -319,6 +351,25 @@ main {
 
   .description {
     padding: 0 11%;
+  }
+
+  .find-out-more {
+    background-image: url("../images/bg-pattern-how-we-work-desktop.svg");
+    display: flex;
+    text-align: start;
+    height: 250px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .find-out-more h4 {
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    max-width: 500px;
+  }
+  .find-out-more button {
+    margin: 0;
+    padding: 0;
   }
 }
 @media screen and (min-width: 1000px) {
