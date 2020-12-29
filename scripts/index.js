@@ -1,3 +1,7 @@
+$(window).on('beforeunload', function () {
+	$(window).scrollTop('150px')
+})
+
 const $button = document.querySelector('.hamburger')
 const $plegableMenu = document.querySelector('.plegable-menu')
 const $backgroundImage = document.querySelector(

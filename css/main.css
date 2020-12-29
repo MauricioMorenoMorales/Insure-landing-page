@@ -122,7 +122,8 @@ main {
   margin-top: -5px;
   margin-bottom: 0;
   padding-top: 60px;
-  font-size: 3rem;
+  font-size: 3.5rem;
+  max-width: 400px;
 }
 .hero__article__text-container__button {
   background-color: #2d2640;
@@ -145,7 +146,7 @@ main {
 }
 .description__title {
   color: #2b272f;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 .description__card {
   max-width: 350px;
@@ -153,13 +154,14 @@ main {
   margin-top: 60px;
 }
 .description__card__text h4 {
-  font-size: 1.7rem;
+  font-size: 3.5rem;
   color: #2d2640;
 }
 .description__card__text p {
   line-height: 1.7rem;
   font-weight: 400;
   color: #837d87;
+  padding: 0 10px;
 }
 
 .find-out-more {
@@ -175,13 +177,13 @@ main {
 }
 .find-out-more h4 {
   padding-top: 100px;
-  font-size: 2.9rem;
+  font-size: 3.5rem;
   margin-bottom: 25px;
 }
 .find-out-more button {
   background-color: #2d2640;
   border: 2px solid #fafafa;
-  width: 150px;
+  width: 200px;
   height: 40px;
   color: #fafafa;
   margin-bottom: 100px;
@@ -222,6 +224,25 @@ main {
 
   .hamburger {
     display: none;
+  }
+
+  .find-out-more {
+    background-image: url("../images/bg-pattern-how-we-work-desktop.svg");
+    display: flex;
+    text-align: start;
+    height: 250px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .find-out-more h4 {
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    max-width: 500px;
+  }
+  .find-out-more button {
+    margin: 0;
+    padding: 0;
   }
 }
 @media screen and (min-width: 810px) {
