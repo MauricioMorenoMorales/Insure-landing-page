@@ -170,6 +170,7 @@ main
 			color: $very-light-gray
 			margin-bottom: $spacing-large
 
+//! ################################
 footer
 	margin-top: $spacing-large
 	background-image: url('../images/bg-pattern-footer-mobile.svg')
@@ -314,6 +315,28 @@ footer
 		button
 			margin: 0
 			padding: 0
+
+	footer
+		background-image: url('../images/bg-pattern-footer-desktop.svg')
+		background-size: 50% 100%
+		background-position: top left
+	.footer__social
+		position: relative
+		flex-direction: row
+		justify-content: space-around
+		&__figure
+			margin-left: 0
+		&__line
+			position: absolute
+			margin-top: $spacing-medium
+			margin-left: auto
+			margin-right: auto
+			width: 80%
+	.footer__links
+		flex-direction: row
+		justify-content: space-around
+		padding: $spacing-large 5%
+		text-align: start
 
 //? ################################
 @media screen and (min-width: 1000px)

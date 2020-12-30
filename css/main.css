@@ -371,6 +371,35 @@ footer {
     margin: 0;
     padding: 0;
   }
+
+  footer {
+    background-image: url("../images/bg-pattern-footer-desktop.svg");
+    background-size: 50% 100%;
+    background-position: top left;
+  }
+
+  .footer__social {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer__social__figure {
+    margin-left: 0;
+  }
+  .footer__social__line {
+    position: absolute;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  .footer__links {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 100px 5%;
+    text-align: start;
+  }
 }
 @media screen and (min-width: 1000px) {
   .description {
