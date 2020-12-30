@@ -72,6 +72,17 @@ button
 		left: 0
 		right: 0
 		display: block
+#plegable-nav-button
+	display: flex
+	border: 2px solid $very-light-gray
+	width: 80%
+	height: 60px
+	align-items: center
+	justify-content: center
+	margin-left: auto
+	margin-right: auto
+	a
+		min-width: 250px
 
 main
 	margin-top: 80px
@@ -118,6 +129,10 @@ main
 				height: 40px
 				color: $very-light-gray
 				margin-bottom: $spacing-large
+				transition: .3s
+				&:hover
+					background-color: $very-light-gray
+					color: $dark-violet
 
 //! ################################
 .description
@@ -169,6 +184,10 @@ main
 			height: 40px
 			color: $very-light-gray
 			margin-bottom: $spacing-large
+			transition: .3s
+			&:hover
+				background-color: $very-light-gray
+				color: $dark-violet
 
 //! ################################
 footer
@@ -234,6 +253,10 @@ footer
 		color: $very-dark-violet
 		border: 2px solid
 		text-align: center
+		&:hover
+			background-color: $dark-violet
+			color: $very-light-gray
+			transition: .3s
 	.plegable-menu.active
 		display: none
 	.hamburger

@@ -29,7 +29,7 @@
   </style>
   <script>
     function autoScroll() {
-      var div = document.querySelector(".header");
+      var div = document.querySelector(".hero__article__text-container");
       div.style.display = '';
       var top = div.offsetTop;
       if (window.scrollTop != top)
@@ -74,7 +74,7 @@
       <li class="nav-li"><a class="nav-link" href="#">How we work</a></li>
       <li class="nav-li"><a class="nav-link" href="#">Blog</a></li>
       <li class="nav-li"><a class="nav-link" href="#">Account</a></li>
-      <li class="nav-li"><a class="nav-link" href="#">View Plans</a></li>
+      <li class="nav-li" id="plegable-nav-button"><a class="nav-link" href="#">View Plans</a></li>
     </ul>
   </div>
   <main>
