@@ -1,0 +1,40 @@
+.header__menu--desktop {
+  display: block;
+}
+.header__menu--desktop ul {
+  display: flex;
+  margin-right: 10px;
+}
+.header__menu--desktop ul li {
+  list-style: none;
+  font-weight: 400;
+  font-family: "Karla", sans-serif;
+}
+.header__menu--desktop ul li a {
+  display: flex;
+  text-decoration: none;
+  color: #95a9c6;
+  width: 120px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav-button {
+  color: #2b272f;
+  border: 2px solid;
+  text-align: center;
+}
+#nav-button:hover {
+  background-color: #2d2640;
+  color: #fafafa;
+  transition: 0.3s;
+}
+
+.plegable-menu.active {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
