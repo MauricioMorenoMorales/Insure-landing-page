@@ -1,0 +1,126 @@
+@media screen and (min-width: 810px) {
+  .header {
+    padding: 0 11%;
+  }
+
+  .mobile-background {
+    display: none;
+  }
+
+  .hero-container {
+    height: 700px;
+  }
+  .hero-container__background-image--left {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 400px;
+    height: 300px;
+  }
+  .hero-container__background-image--right {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    height: 500px;
+    right: 0;
+    top: -40px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 0 8%;
+    background-color: #2d2640;
+  }
+  .hero__figure {
+    margin-top: 60px;
+    position: absolute;
+    margin-left: 50%;
+    margin-right: 0;
+  }
+  .hero__figure__image {
+    height: 40%;
+    width: 80%;
+  }
+  .hero__article {
+    color: #fafafa;
+    background-image: none;
+  }
+  .hero__article__line {
+    padding-top: 60px;
+    width: 20%;
+    border-bottom: 1px solid #fafafa;
+    margin-left: 5%;
+  }
+  .hero__article__text-container {
+    width: 50%;
+    text-align: start;
+  }
+  .hero__article__text-container__h1 {
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .hero__article__text-container__p {
+    font-size: 1rem;
+  }
+  .hero__article__text-container__button {
+    position: relative;
+    z-index: 15;
+    margin-bottom: 60px;
+  }
+
+  .description {
+    padding: 0 11%;
+  }
+
+  .find-out-more {
+    background-image: url("../images/bg-pattern-how-we-work-desktop.svg");
+    display: flex;
+    text-align: start;
+    height: 250px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .find-out-more h4 {
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    max-width: 500px;
+  }
+  .find-out-more button {
+    margin: 0;
+    padding: 0;
+  }
+
+  footer {
+    background-image: url("../images/bg-pattern-footer-desktop.svg");
+    background-size: 50% 100%;
+    background-position: top left;
+  }
+
+  .footer__social {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer__social__figure {
+    margin-left: 0;
+  }
+  .footer__social__line {
+    position: absolute;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  .footer__links {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 100px 5%;
+    text-align: start;
+  }
+}

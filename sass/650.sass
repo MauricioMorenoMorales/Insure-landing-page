@@ -1,0 +1,34 @@
+@import './_tokens'
+
+@media screen and ( min-width: 650px)
+.header
+	&__menu
+		&--desktop
+			display: block
+			ul
+				display: flex
+				margin-right: 10px
+				li
+					list-style: none
+					font-weight: $font-weight-body-normal
+					font-family: $font-family-body
+					a
+						display: flex
+						text-decoration: none
+						color: $grayish-blue
+						width: 120px
+						height: 40px
+						justify-content: center
+						align-items: center
+#nav-button
+	color: $very-dark-violet
+	border: 2px solid
+	text-align: center
+	&:hover
+		background-color: $dark-violet
+		color: $very-light-gray
+		transition: .3s
+.plegable-menu.active
+	display: none
+.hamburger
+	display: none

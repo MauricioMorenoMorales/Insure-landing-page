@@ -1,0 +1,98 @@
+@import './_tokens'
+
+@media screen and ( min-width: 810px)
+	.header
+		padding: 0 11%
+	.mobile-background
+		display: none
+	.hero-container
+		height: 700px
+		&__background-image
+			&--left
+				display: block
+				position: absolute
+				z-index: 10
+				top: 400px
+				height: 300px
+			&--right
+				display: block
+				position: absolute
+				z-index: 10
+				height: 500px
+				right: 0
+				top: -40px
+	.hero
+		display: flex
+		flex-direction: column
+		align-items: center
+		position: relative
+		padding: 0 8%
+		background-color: $dark-violet
+		&__figure
+			margin-top: $spacing-medium
+			position: absolute
+			margin-left: 50%
+			margin-right: 0
+			&__image
+				height: 40%
+				width: 80%
+		&__article
+			color: $very-light-gray
+			background-image: none
+			&__line
+				padding-top: $spacing-medium
+				width: 20%
+				border-bottom: 1px solid $very-light-gray
+				margin-left: 5%
+			&__text-container
+				width: 50%
+				text-align: start
+				&__h1
+					margin-bottom: 0
+					margin-right: 0
+					margin-left: 0
+				&__p
+					font-size: 1rem
+				&__button
+					position: relative
+					z-index: 15
+					margin-bottom: $spacing-medium
+	.description
+		padding: 0 11%
+	.find-out-more
+		background-image: url('../images/bg-pattern-how-we-work-desktop.svg')
+		display: flex
+		text-align: start
+		height: 250px
+		align-items: center
+		justify-content: space-around
+		h4
+			margin: 0
+			padding: 0
+			width: 70%
+			max-width: 500px
+		button
+			margin: 0
+			padding: 0
+
+	footer
+		background-image: url('../images/bg-pattern-footer-desktop.svg')
+		background-size: 50% 100%
+		background-position: top left
+	.footer__social
+		position: relative
+		flex-direction: row
+		justify-content: space-around
+		&__figure
+			margin-left: 0
+		&__line
+			position: absolute
+			margin-top: $spacing-medium
+			margin-left: auto
+			margin-right: auto
+			width: 80%
+	.footer__links
+		flex-direction: row
+		justify-content: space-around
+		padding: $spacing-large 5%
+		text-align: start
