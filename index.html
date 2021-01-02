@@ -66,7 +66,7 @@
         <li><a id="nav-button" href="#">View plans</a></li>
       </ul>
     </div>
-    <button class="hamburger hamburger--spin" type="button">
+    <button class="hamburger hamburger--spin" type="button" name="toggle menu" aria-label="open menu">
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
       </span>
@@ -88,8 +88,10 @@
         src="./images/bg-pattern-intro-right-desktop.svg" alt="null">
       <section class="hero">
         <figure class="hero__figure">
-          <img class="hero__figure__image" src="./images/image-intro-desktop.jpg"
-            alt="Hero picture a family walking in the grass">
+          <picture>
+            <source class="hero__figure__image" media="(min-width: 400px)" srcset="./images/image-intro-desktop.jpg">
+            <img class="hero__figure__image" src="./images/image-intro-mobile.jpg" alt="">
+          </picture>
         </figure>
         <article class="hero__article">
           <div class="hero__article__line"></div>
@@ -100,7 +102,7 @@
               and technology to help you find the plan that’s right for you. Ensure you
               and your loved ones are protected.
             </p>
-            <button class="hero__article__text-container__button">View Plans</button>
+            <button class="hero__article__text-container__button" name="vew plans">View Plans</button>
           </div>
         </article>
       </section>
@@ -145,7 +147,7 @@
     </section>
     <section class="find-out-more">
       <h4>Find out more about how we work</h4>
-      <button>HOW WE WORK</button>
+      <button name="how we work">HOW WE WORK</button>
     </section>
   </main>
   <footer>
@@ -195,7 +197,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-  <script src="./scripts/index.js"></script>
+  <script async src="./scripts/index.js"></script>
 </body>
 
 </html>
